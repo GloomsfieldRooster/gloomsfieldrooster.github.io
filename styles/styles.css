@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 200px);
+}
+
+#art_container {
+    width: 600px;
+    height: 600px;
+    border: 1px solid #ccc;
+    position: relative;
+
+    grid-column: 1 / span 3;
+}
+
+.art_image {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    image-rendering: pixelated;
+}
+
+#controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 10px;
+
+    grid-column: 4 / span 1;
+
+    padding-left: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="range"] {
+    width: 75%;
+}

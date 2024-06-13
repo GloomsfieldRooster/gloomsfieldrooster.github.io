@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dma050 final</title>
+    <title>Interactive Art Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Interactive Art Page</h1>
+        </header>
+        <main>
+            <div id="art_container"> </div>
+
+            <div id="image_selection_container">
+                <select name="image_selector" id="image_selector">
+                </select>
+            </div>
+
+            <div id="image_controls">
+                <h3 id="controls_header">Controls for image 1</h3>
+                <label for="image_blend_mode">Blend Mode:</label>
+                <select id="image_blend_mode">
+                    <option value="normal">Normal</option>
+                    <option value="multiply">Multiply</option>
+                    <option value="screen">Screen</option>
+                    <option value="overlay">Overlay</option>
+                </select>
+                
+                <label for="image_x_position">X Position:</label>
+                <input type="range" id="image_x_position" name="image_x_position" min="0" max="100" value="0">
+                
+                <label for="image_y_position">Position Y:</label>
+                <input type="range" id="image_y_position" name="image_y_position" min="0" max="100" value="0">
+            </div>
+        </main>
+        <footer>
+            <p>© art by amory acosta</p>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
